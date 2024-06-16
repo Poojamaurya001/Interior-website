@@ -1,0 +1,294 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+h1::after{
+    content: 'Designing';
+    color: orangered;
+    font-size:35px;
+    margin-left:2vh ;
+    animation:example 3s infinite ;
+    
+}
+
+#biggerText{
+     font-size: 55px;
+     font-weight: lighter;
+}
+#biggerText:hover{
+    color: azure;
+}
+
+#gif{
+    animation: gif 2s ease-in infinite;
+
+}
+@keyframes gif{
+    from{transform: translateY(20px);}
+    to{transform: translateX(-20px);}
+}
+ul{
+    display: none;
+    list-style: none;
+    color: azure;
+    transition: 1s;
+}
+button:active{
+    transform: scale(1.5);
+}
+img{
+    
+    box-shadow: 0 0 5px black,
+    0 0 25px black,
+    0 0 50px black,
+    0 0 100px black;
+}
+#imgBoxShadow{
+    box-shadow: none;
+}
+
+h3::before{
+   content: 'Interior';
+   color: yellow;
+   transform: translate X(200px);
+   animation:example 3s infinite ;
+    
+}
+p:hover{
+    text-shadow: 0 0 10px rgb(226, 186, 7);
+}
+
+
+#header{
+    font-weight: 900;
+    color: transparent;
+    background-image: url("kitchen.png");
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: contain;
+    animation: animate 3s ease ;
+    
+}
+#header:hover{
+    animation: animate 3s ease ;
+
+}
+#move-container{
+    animation: move 10s ;
+}
+p{
+    margin-top: 10vh;
+    
+    
+}
+h2::after{
+    content: 'Design Studio';
+    color: rgb(18, 71, 18);
+    animation:example 3s infinite ;
+}
+button{
+    box-shadow: 0 0 5px rgb(72, 72, 34),
+    0 0 5px yellow;
+    
+}
+button:hover{
+    box-shadow: 0 0 5px yellow,
+                0 0 25px yellow,
+                0 0 50px yellow,
+                0 0 100px yellow;
+}
+.black{
+    background-color: black;
+}
+
+.display-1{
+    font-size: 40vw;
+}
+@keyframes example {
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:200px; top:0px;}
+    50%  {color:blue; left:200px; top:200px;}
+    75%  {color:green; left:0px; top:200px;}
+    100% {color:red; left:0px; top:0px;}
+  }
+  @keyframes move {
+    from{
+        display: none;
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(100px);
+    }
+  }
+  @keyframes footermove {
+    from{
+        
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(20px);
+    }
+  }
+  @keyframes animate{
+    0%{display: none;}
+    50%{
+        transform: translateX(800px);
+    }
+    100%{transform: translateX(-800px);}
+  }
+.form-span{
+    color:rgb(174, 169, 169);
+    text-shadow:0 0 10px rgb(154, 159, 159) ;
+}
+.form-span::after{
+    content:' Get help logging in.';
+    color: rgb(64, 64, 160);
+    text-shadow:0 0 10px rgb(17, 41, 121) ;
+}
+#login input::placeholder{
+font-size: 15px;
+color: rgba(44, 43, 43, 0.877);
+}
+#login h2{
+color: rgb(19, 107, 201);
+font-size: 25px;
+text-shadow:0 0 10px rgb(15, 162, 176) ;
+}
+#login img{
+height: 25px;
+width: 25px;
+
+}
+err{
+color: red;
+}
+#body{
+background:linear-gradient(to left,rgb(30, 30, 117),rgb(129, 122, 122),rgb(30, 30, 117));
+}
+#cross{
+    font-size: 30px;
+    color:red;
+    text-shadow: 10px 10px 40px white;
+}
+#login{
+   box-shadow: 10px 10px 20px rgb(102, 124, 111);
+   border-radius: 10px;
+   background-color: rgba(238, 213, 123, 0.89);
+   transition: 2s linear;
+}
+#bg-img{
+    background-image: url('kitchen.png');
+    background-size: cover;
+    margin: 0px;
+    color: rgba(244, 247, 247, 0.993);
+    font-weight: 400;
+}
+
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    height: 400px;
+    width: 350px;
+  }
+   
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    height: 400px;
+    width: 350px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    color: black;
+    height: 400px;
+    width: 350px;
+  }
+  
+
+  .flip-card-back {
+    background-color:rgba(8, 8, 0, 0.603);
+    color: white;
+    transform: rotateY(180deg);
+    border: 5px solid black;
+    height: 400px;
+    width: 350px;
+  
+  }
+
+  .flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    height: 400px;
+    width: 350px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  #bgImageContainer{
+    background-color: rgba(13, 13, 13, 0.929);
+    height: 50vh;
+    background-size: cover;
+    
+  }
+  #textBold{
+    color: rgba(252, 243, 243, 0.947);
+    font-weight: 300;
+    
+  }
+  #featurePara{
+    font-weight: 300;
+    font-size:26px;
+    
+  }
+  #text-animation{
+    animation: textanimation linear;
+    animation-timeline: view();
+    animation-range-start:150px;
+    animation-range-end: 600px;
+
+  }
+  #txt-animation{
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start:150px;
+    animation-range-end: 500px;
+  }
+  img{
+    overflow:visible;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start:150px;
+    animation-range-end: 500px;
+  }
+  #bgContactimg{
+    animation: img-zoom linear;
+    animation-timeline: view(300px);
+    
+  }
+  
+ @keyframes fade-in{
+  from{ scale:0.5;opacity: 0;}
+  to{scale:1;opacity: 1;}
+ }
+
+ @keyframes textanimation{
+    from{transform: translateX(-10px) ;opacity: 0;}
+    to{transform: translateX(10px) ;opacity: 1;}
+ }
+
+ @keyframes img-zoom{
+  from{ scale:0.5;opacity: 0;}
+  to{scale:1;opacity: 1;}
+}
