@@ -1,2 +1,5 @@
 # Interior-website
-This is an interior design website, frontend language has been used in it, it is also completely responsive. It has used languages like HTML CSS JAVASCRIPT BOOTSTRAP, I am deploying it on GitHub to host this website.
+- Developed a fully responsive interior design website using HTML, CSS, JavaScript, and Bootstrap
+- Utilized frontend languages to create an engaging and visually appealing user interface
+- Employed GitHub to deploy and host the website for easy accessibility and sharing
+- link - https://poojamaurya001.github.io/Interior-website/
